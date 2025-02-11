@@ -7,6 +7,20 @@
 - Use the Build Editor to create complete environments;
 - Perform a practical activity: create a house with elements (walls, doors, windows, roof).
 
+## 0. Installing Gazebo
+
+Simulator:
+
+```bash
+curl -sSL http://get.gazebosim.org | sh
+```
+
+Packages for interfacing with the simulator:
+
+```bash
+sudo apt install ros-foxy-gazebo-ros-pkgs
+```
+
 ## 1. Exploring the Gazebo Interface
 
 ### 1.1 Starting Gazebo 

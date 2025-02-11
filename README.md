@@ -1,6 +1,6 @@
 # Autonomous Mobile Robotics
 
-This repository contains the material used in the Autonomous Mobile Robotics course at Insper, created by [Lucas de Cunto Costanzo](https://github.com/LucasC19) and translated to English by me [Felipe Catapano](https://github.com/MekhyW).
+This repository contains the material used in the Autonomous Mobile Robotics course at Insper, created by [Lucas de Cunto Costanzo](https://github.com/LucasC19) and translated to English and updated by me [Felipe Catapano](https://github.com/MekhyW).
 
 ## Guides
 
