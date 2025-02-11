@@ -34,7 +34,7 @@ sudo apt install ros-foxy-gazebo-ros-pkgs
 
     ![Initial Gazebo screen](images/gazebo_start_screen.png)
 
-### 1.2 Componentes Principais da Interface
+### 1.2 Main Interface Components
 
 1. **3D View:** Where the simulation is rendered in real time.
 
