@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf/exemplo1.urdf
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf/exemplo2.xacro
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf/exemplo2_arm.xacro
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//launch
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//launch/exemplo1.launch.py
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//launch/exemplo2.launch.py
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/ament_index/resource_index/package_run_dependencies/differential
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/ament_index/resource_index/parent_prefix_path/differential
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/path.sh
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/path.dsv
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.bash
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.sh
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.zsh
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.dsv
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/package.dsv
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/ament_index/resource_index/packages/differential
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/cmake/differentialConfig.cmake
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/cmake/differentialConfig-version.cmake
+-- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/package.xml

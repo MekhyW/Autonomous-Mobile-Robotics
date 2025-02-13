@@ -1,0 +1,27 @@
+[0.018s] Invoking command in '/home/mekhyw/amr_ws/build/differential': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mekhyw/amr_ws/build/differential -- -j16 -l16
+[0.099s] Invoked command in '/home/mekhyw/amr_ws/build/differential' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mekhyw/amr_ws/build/differential -- -j16 -l16
+[0.103s] Invoking command in '/home/mekhyw/amr_ws/build/differential': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mekhyw/amr_ws/build/differential
+[0.112s] -- Install configuration: ""
+[0.112s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf
+[0.112s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf/exemplo1.urdf
+[0.112s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf/exemplo2.xacro
+[0.113s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//urdf/exemplo2_arm.xacro
+[0.113s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//launch
+[0.113s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//launch/exemplo1.launch.py
+[0.114s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential//launch/exemplo2.launch.py
+[0.114s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/ament_index/resource_index/package_run_dependencies/differential
+[0.114s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/ament_index/resource_index/parent_prefix_path/differential
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/ament_prefix_path.sh
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/ament_prefix_path.dsv
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/path.sh
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/environment/path.dsv
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.bash
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.sh
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.zsh
+[0.115s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/local_setup.dsv
+[0.116s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/package.dsv
+[0.116s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/ament_index/resource_index/packages/differential
+[0.116s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/cmake/differentialConfig.cmake
+[0.116s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/cmake/differentialConfig-version.cmake
+[0.116s] -- Up-to-date: /home/mekhyw/amr_ws/install/differential/share/differential/package.xml
+[0.437s] Invoked command in '/home/mekhyw/amr_ws/build/differential' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mekhyw/amr_ws/build/differential

@@ -1,0 +1,2 @@
+Invoking command in '/home/mekhyw/amr_ws/build/differential': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mekhyw/amr_ws/src/differential -DCMAKE_INSTALL_PREFIX=/home/mekhyw/amr_ws/install/differential
+Invoked command in '/home/mekhyw/amr_ws/build/differential' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mekhyw/amr_ws/src/differential -DCMAKE_INSTALL_PREFIX=/home/mekhyw/amr_ws/install/differential

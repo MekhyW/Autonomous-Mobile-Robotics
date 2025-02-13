@@ -1,0 +1,39 @@
+[0.015s] Invoking command in '/home/mekhyw/amr_ws/build/differential': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mekhyw/amr_ws/src/differential -DCMAKE_INSTALL_PREFIX=/home/mekhyw/amr_ws/install/differential
+[0.216s] -- The C compiler identification is GNU 9.4.0
+[0.486s] -- The CXX compiler identification is GNU 9.4.0
+[0.638s] -- Check for working C compiler: /usr/bin/cc
+[0.871s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.871s] -- Detecting C compiler ABI info
+[1.004s] -- Detecting C compiler ABI info - done
+[1.011s] -- Detecting C compile features
+[1.011s] -- Detecting C compile features - done
+[1.013s] -- Check for working CXX compiler: /usr/bin/c++
+[1.140s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.141s] -- Detecting CXX compiler ABI info
+[1.259s] -- Detecting CXX compiler ABI info - done
+[1.266s] -- Detecting CXX compile features
+[1.266s] -- Detecting CXX compile features - done
+[1.267s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.281s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.281s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.377s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[3.471s] CMake Error at CMakeLists.txt:21 (find_package):
+[3.471s]   By not providing "Findxacro.cmake" in CMAKE_MODULE_PATH this project has
+[3.471s]   asked CMake to find a package configuration file provided by "xacro", but
+[3.471s]   CMake did not find one.
+[3.471s] 
+[3.471s]   Could not find a package configuration file provided by "xacro" with any of
+[3.471s]   the following names:
+[3.471s] 
+[3.471s]     xacroConfig.cmake
+[3.471s]     xacro-config.cmake
+[3.471s] 
+[3.471s]   Add the installation prefix of "xacro" to CMAKE_PREFIX_PATH or set
+[3.472s]   "xacro_DIR" to a directory containing one of the above files.  If "xacro"
+[3.472s]   provides a separate development package or SDK, be sure it has been
+[3.472s]   installed.
+[3.472s] 
+[3.472s] 
+[3.472s] -- Configuring incomplete, errors occurred!
+[3.472s] See also "/home/mekhyw/amr_ws/build/differential/CMakeFiles/CMakeOutput.log".
+[3.475s] Invoked command in '/home/mekhyw/amr_ws/build/differential' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mekhyw/amr_ws/src/differential -DCMAKE_INSTALL_PREFIX=/home/mekhyw/amr_ws/install/differential
