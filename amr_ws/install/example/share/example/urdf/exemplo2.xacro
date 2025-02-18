@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find differential)/urdf/exemplo2_arm.xacro" />
+
+  <!--Base Footprint-->
+  <link name="base_link">
+  </link>
+
+  <!--Base link-->
+  <link name="base">
+    <!-- Visual representation -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.5 0.5 0.1"/> 
+      </geometry>
+    </visual>
+    
+    <!-- Collision representation -->
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.5 0.5 0.1"/>  
+      </geometry>
+    </collision>
+    
+    <!-- Inertial properties -->
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="100.0"/>
+      <inertia
+        ixx="0.5" ixy="0.0" ixz="0.0"
+        iyy="0.5" iyz="0.0"
+        izz="0.1"/>
+    </inertial>
+  </link>
+  <joint name="base_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.05" />
+    <parent link="base_link" />
+    <child link="base" />
+  </joint>
+
+  <!-- Arms -->
+  <xacro:arm arm_name="arm1" parent="base">
+    <origin rpy="0 0 0" xyz="0 0 0.05"/>
+    <axis xyz="0 0 1" />
+  </xacro:arm>
+  <xacro:arm arm_name="arm2" parent="arm1">
+    <origin rpy="0 0 0" xyz="0 0.05 1.0"/>
+    <axis xyz="0 1 0" />
+  </xacro:arm>
+
+</robot>
