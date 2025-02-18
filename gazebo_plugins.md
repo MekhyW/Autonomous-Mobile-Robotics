@@ -33,11 +33,11 @@ sudo apt install ros-foxy-gazebo-plugins
 
 - In the ```robot_description/package.xml``` file, add the dependencies:
 
-    ![package.xml dependencies](imagens/package_dependencies.png)
+    ![package.xml dependencies](images/package_dependencies.png)
 
 - In the ```robot_description/CMakeLists.txt``` file, add also the dependencies:
 
-    ![CMakeLists.txt dependencies](imagens/cmake_dependencies.png)
+    ![CMakeLists.txt dependencies](images/cmake_dependencies.png)
 
 Now our environment is configured to proceed with the exercises.
 
@@ -59,7 +59,7 @@ Now that the IMU link is configured, we will add the plugin to it, which will be
 - Open the ```robot_description/sensors.xacro``` file
 - Add the first tag of the robot, as well as in the main file
 - Add the following code to the file:
-    ![IMU Plugin](imagens/imu_plugin.png)
+    ![IMU Plugin](images/imu_plugin.png)
 
 
 ### 2.3 Test
@@ -82,7 +82,7 @@ Now that the IMU link is configured, we will add the plugin to it, which will be
 ### 3.2 Lidar Plugin
 
 - Add the following code to the ```sensors.xacro``` file:
-    ![Lidar Plugin](imagens/lidar_plugin.png)
+    ![Lidar Plugin](images/lidar_plugin.png)
 
 - Complete the required fields:
     - ```samples```: Number of points that the LIDAR will have. Define it to be at least 1 point per degree that the LIDAR will operate.
@@ -111,7 +111,7 @@ Now that the IMU link is configured, we will add the plugin to it, which will be
 ### 4.2 Camera Plugin
 
 - Add the following code to the ```sensors.xacro``` file:
-    ![Camera Plugin](imagens/camera_plugin.png)
+    ![Camera Plugin](images/camera_plugin.png)
 
 - Complete os campos necessários:
     - ```width``` e ```height```: Resolution of your camera. A good value is 640x480. A very high resolution may require more processing.
@@ -134,7 +134,7 @@ Now, we will add the last plugin. It will be responsible for performing the inve
 ### 5.1 Differential Drive plugin
 
 - Add the following code to the ```sensors.xacro``` file:
-    ![Camera Plugin](imagens/differential_controller_plugin.png)
+    ![Camera Plugin](images/differential_controller_plugin.png)
 
 - Complete the required fields:
     - ```left_joint``` e ```right_joint```: Fill in with the name of the joints corresponding to each of the wheels
