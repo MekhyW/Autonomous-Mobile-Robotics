@@ -19,6 +19,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package(gazebo_plugins REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
