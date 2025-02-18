@@ -13,19 +13,19 @@ import xacro
 
 def generate_launch_description():
 
-    pkg_box_bot_gazebo = get_package_share_directory('differential')
-    description_package_name = "differential"
+    pkg_box_bot_gazebo = get_package_share_directory('example')
+    description_package_name = "example"
     install_dir = get_package_prefix(description_package_name)
 
     robot_model_path = os.path.join(
-        get_package_share_directory('differential'))
+        get_package_share_directory('example'))
 
 
-    xacro_file = os.path.join(robot_model_path, 'urdf', 'exemplo2.xacro')
-    # convert XACRO file into URDF
-    doc = xacro.parse(open(xacro_file))
-    xacro.process_doc(doc)
-    params = {'robot_description': doc.toxml(), 'use_sim_time': True}
+    urdf_file = os.path.join(robot_model_path, 'urdf', 'exemplo1.urdf')
+    # read URDF file
+    with open(urdf_file, 'r') as file:
+        urdf_content = file.read()
+    params = {'robot_description': urdf_content, 'use_sim_time': True}
 
     robot_state_publisher = Node(
         package='robot_state_publisher',
