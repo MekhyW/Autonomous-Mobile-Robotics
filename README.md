@@ -7,3 +7,4 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [ROS2 Terminal Basics](ros2_terminal_basics.md)
 - [Gazebo Basics](gazebo_basics.md)
 - [Building a Differential Robot](differential_robot.md)
+- [Gazebo Plugins](gazebo_plugins.md)
