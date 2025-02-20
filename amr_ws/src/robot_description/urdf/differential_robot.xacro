@@ -8,6 +8,16 @@
   <xacro:include filename="$(find robot_description)/urdf/wheels.xacro" />
   <xacro:include filename="$(find robot_description)/urdf/caster_ball.xacro" />
 
+  <!-- Add dummy base link -->
+  <link name="base_link">
+  </link>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="chassis"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
   <link name='chassis'>
     <pose>0 0 0.1 0 0 0</pose>
 
@@ -15,7 +25,7 @@
       <mass value="10.0"/>
       <origin xyz="0.0 0 0.1" rpy=" 0 0 0"/>
 
-      <cylinder_inertia m="10" r="${chasis_cylinder_radius}" h="${chasis_cylinder_height}"/>
+      <box_inertia m="10" l="${chasis_box_length}" w="${chasis_box_width}" h="${chasis_box_height}"/>
 
       <inertia
           ixx="0.5" ixy="0" ixz="0"
@@ -26,16 +36,16 @@
 
     <collision name='collision'>
       <geometry>
-        <cylinder radius="${chasis_cylinder_radius}" length="${chasis_cylinder_height}"/>
+        <box size="${chasis_box_length} ${chasis_box_width} ${chasis_box_height}"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <cylinder radius="${chasis_cylinder_radius}" length="${chasis_cylinder_height}"/>
+        <box size="${chasis_box_length} ${chasis_box_width} ${chasis_box_height}"/>
       </geometry>
-      <material name="blue"/>
+      <material name="red"/>
     </visual>
 
 
