@@ -62,7 +62,7 @@ In it, the ```CMakeLists.txt``` and ```package.xml``` files already have the dep
 
     In this case, the message will be composed of:
     - ```count```: of type ```int32```
-    - ```menssage```: of type ```string```
+    - ```message```: of type ```string```
 
 3. In the ```CMakeLists.txt``` file, declare the newly created interface to be installed:
 
@@ -345,7 +345,7 @@ The code defines a node with a **subscriber** that receives messages from a topi
 ```python
 import rclpy
 from rclpy.node import Node
-from custom_interfaces.msg import Aula6
+from custom_interfaces.msg import Aula7
 ```
 
 - ```rclpy```: Main library for ROS2 in Python.

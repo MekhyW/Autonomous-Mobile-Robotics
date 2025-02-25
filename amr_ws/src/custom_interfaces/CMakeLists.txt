@@ -35,6 +35,7 @@ endif()
 
 # Declare custom interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
+    "msg/Aula7.msg"
 )
 
 ament_package()
