@@ -9,6 +9,7 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Building a Differential Robot](differential_robot.md)
 - [Gazebo Plugins](gazebo_plugins.md)
 - [Custom Messages, Publishers and Subscribers](custom_msgs_pubsub.md)
+- [Services and Clients](services_and_clients.md)
 
 ## Projects
 

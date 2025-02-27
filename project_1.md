@@ -21,7 +21,7 @@ This activity will allow you to practice the organization of the ROS2 workspace,
 Create a ROS 2 workspace following the typical convention, for example:
 
 ```bash
-[seu nome]_ws/
+[your_name]_ws/
 ├── src/
     └── robot_description/
 ```
