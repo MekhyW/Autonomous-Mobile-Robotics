@@ -9,7 +9,7 @@
   <!--Chasis_box-->
   <xacro:property name="chasis_box_length" value="0.4" />
   <xacro:property name="chasis_box_width" value="0.3" />
-  <xacro:property name="chasis_box_height" value="0.1" />
+  <xacro:property name="chasis_box_height" value="0.15" />
 
   <!--Chasis_caster-->
   <xacro:property name="chasis_caster_radius" value="0.05" />
@@ -23,7 +23,7 @@
   <!--Chasis_box-->
   <xacro:property name="chasis_box_x" value="0" />
   <xacro:property name="chasis_box_y" value="0" />
-  <xacro:property name="chasis_box_z" value="0.1" />
+  <xacro:property name="chasis_box_z" value="0.15" />
 
   <xacro:property name="chasis_box_r" value="0" />
   <xacro:property name="chasis_box_p" value="0" />

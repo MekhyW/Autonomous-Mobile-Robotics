@@ -9,7 +9,7 @@ import xacro
 
 def generate_launch_description():
 
-    xacro_file = "differential_robot.xacro"
+    xacro_file = "robot_base.xacro"
     description_package_name = "robot_description"
     description_package_path = os.path.join(get_package_share_directory(description_package_name))
     xacro_file_path = os.path.join(description_package_path, 'urdf', xacro_file)

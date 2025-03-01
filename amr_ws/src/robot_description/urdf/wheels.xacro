@@ -55,18 +55,16 @@
     <joint type="continuous" name="left_wheel_hinge">
       <origin xyz="${left_wheel_x} ${left_wheel_y} ${left_wheel_z}" rpy="0 0 0"/>
       <child link="left_wheel"/>
-      <parent link="chassis"/>
+      <parent link="base_link"/>
       <axis xyz="0 1 0" rpy="0 0 0"/>
-      <limit effort="100" velocity="100"/>
       <joint_properties damping="0.0" friction="0.0"/>
     </joint>
 
     <joint type="continuous" name="right_wheel_hinge">
       <origin xyz="${right_wheel_x} ${right_wheel_y} ${right_wheel_z}" rpy="0 0 0"/>
       <child link="right_wheel"/>
-      <parent link="chassis"/>
+      <parent link="base_link"/>
       <axis xyz="0 1 0" rpy="0 0 0"/>
-      <limit effort="100" velocity="100"/>
       <joint_properties damping="0.0" friction="0.0"/>
     </joint>
   </xacro:macro>
