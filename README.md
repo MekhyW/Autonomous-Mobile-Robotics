@@ -11,7 +11,9 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Custom Messages, Publishers and Subscribers](custom_msgs_pubsub.md)
 - [Services and Clients](services_and_clients.md)
 - [Actions](actions.md)
+- [Launch Files](launch_files.md)
 
 ## Projects
 
 - [Differential Robot Project in Gazebo](project_1.md)
+- [Basic Navigation](project_2.md)
