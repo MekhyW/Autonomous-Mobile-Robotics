@@ -12,6 +12,7 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Services and Clients](services_and_clients.md)
 - [Actions](actions.md)
 - [Launch Files](launch_files.md)
+- [Sensor Fusion](sensor_fusion.md)
 
 ## Projects
 
