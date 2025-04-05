@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'main_node = basic_navigation.main_node:main',
+            'rotation_action_server = basic_navigation.rotation_action_server:main',
         ],
     },
 )

@@ -52,7 +52,9 @@ In this APS, you will consolidate the knowledge acquired about publishers, subsc
 
 This APS must be delivered by 11:59 PM on March 23 (Sunday).
 
-A .zip file of your **python package** containing the specified nodes and the ROS launch file must be delivered via BlackBoard. The directories, subdirectories, and files must be configured so that the teacher is able to compile the code and run the launch file. In addition, a video of the simulation with the robot performing navigation must be included with the ```.zip```. ## Assessment
+A .zip file of your **python package** containing the specified nodes and the ROS launch file must be delivered via BlackBoard. The directories, subdirectories, and files must be configured so that the teacher is able to compile the code and run the launch file. In addition, a video of the simulation with the robot performing navigation must be included with the ```.zip```. 
+
+## Assessment
 
 This activity will be assessed as follows:
 
