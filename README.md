@@ -14,6 +14,7 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Launch Files](launch_files.md)
 - [Sensor Fusion](sensor_fusion.md)
 - [Adaptative Monte Carlo Localization](amcl.md)
+- [Simultaneous Localization and Mapping](slam.md)
 
 ## Projects
 
