@@ -2,6 +2,13 @@
 
 The **slam_toolbox** package is a SLAM (Simultaneous Localization and Mapping) solution for ROS2 that allows incremental map building and updating while localizing the robot. It combines measurements from sensors such as Lidar and odometry, continuously adjusting the estimated pose using advanced techniques. In this way, **slam_toolbox** corrects accumulated errors in odometry and provides accurate localization, being widely used in mobile robot applications for autonomous navigation in known or partially unknown environments.
 
+## 0. Install SLAM-Toolbox
+
+1. Open a terminal and run the following command to install the **slam_toolbox** package (change the ros distro name if necessary):
+```bash
+sudo apt install ros-foxy-slam-toolbox
+```
+
 ## 1. Creating the Package
 
 1. In the same workspace as your robot simulation, create the ```rm_slam``` package:
