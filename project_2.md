@@ -1,6 +1,6 @@
-# APS 2 - Basic Navigation
+# Project 2 - Basic Navigation
 
-In this APS, you will consolidate the knowledge acquired about publishers, subscribers, services, actions and launch files. Your goal will be to create a sequential navigation system that navigates through all the rooms of the created simulation environment. Your solution should contain:
+In this Project, you will consolidate the knowledge acquired about publishers, subscribers, services, actions and launch files. Your goal will be to create a sequential navigation system that navigates through all the rooms of the created simulation environment. Your solution should contain:
 
 1. **A Main Node**
 
