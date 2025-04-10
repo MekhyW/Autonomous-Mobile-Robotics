@@ -4,7 +4,7 @@ In this Project, you will consolidate the knowledge acquired about the implement
 
 To carry out this APS, you must create two packages:
 
-1. **rm_localization**
+### 1. **rm_localization**
 
 This package must have the following directories and files:
 
@@ -22,7 +22,7 @@ This package must have the following directories and files:
 
 - **map**: Containing the ```.pgm``` and ```.yaml``` files related to the created map.
 
-2. **rm_slam**
+### 2. **rm_slam**
 
 This package must contain the following directories and files:
 
