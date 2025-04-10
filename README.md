@@ -20,3 +20,4 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 
 - [Differential Robot Project in Gazebo](project_1.md)
 - [Basic Navigation](project_2.md)
+- [Localization and SLAM](project_3.md)
