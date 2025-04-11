@@ -32,7 +32,7 @@ In the ```.zip``` file of the lesson, you will find the ```custom_interfaces``` 
     ├── package.xml
     ├── CMakeLists.txt
     └── msg
-        └── (pasta para arquivos .msg)
+        └── (folder for .msg files)
 ```
 
 In it, the ```CMakeLists.txt``` and ```package.xml``` files already have the dependencies configured for the installation of custom interfaces for ROS2. In the ```msg``` directory, the custom action interfaces will be placed, which have the ```.msg``` extension.
