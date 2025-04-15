@@ -15,6 +15,7 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Sensor Fusion](sensor_fusion.md)
 - [Adaptative Monte Carlo Localization](amcl.md)
 - [Simultaneous Localization and Mapping](slam.md)
+- [Introduction to Nav2](nav2.md)
 
 ## Projects
 
