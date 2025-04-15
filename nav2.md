@@ -31,7 +31,7 @@ At the end of your ```~/.bashrc``` file, add the following lines:
 1. Configure variables for the **turtlebot3** package:
 
     ```bash
-    export TURTLEBOT3_MODEL=burguer
+    export TURTLEBOT3_MODEL=burger
     export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/foxy/share/turtlebot3_gazebo/models
     ```
 
