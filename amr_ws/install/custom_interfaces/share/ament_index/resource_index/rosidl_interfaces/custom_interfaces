@@ -1,0 +1,10 @@
+action/Aula9.action
+action/Aula9.idl
+action/Rotate.action
+action/Rotate.idl
+msg/Aula7.idl
+msg/Aula7.msg
+srv/Aula8.idl
+srv/Aula8.srv
+srv/Aula8_Request.msg
+srv/Aula8_Response.msg

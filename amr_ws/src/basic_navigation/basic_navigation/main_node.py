@@ -4,7 +4,7 @@ from rclpy.action import ActionClient
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 from std_srvs.srv import Empty
-from basic_navigation.action import Rotate
+from custom_interfaces.action import Rotate
 
 class MainNavigationNode(Node):
     def __init__(self):
