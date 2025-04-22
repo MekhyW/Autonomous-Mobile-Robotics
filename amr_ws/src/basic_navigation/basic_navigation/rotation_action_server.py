@@ -6,7 +6,7 @@ from rclpy.action import ActionServer, GoalResponse, CancelResponse
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.callback_groups import ReentrantCallbackGroup
 from geometry_msgs.msg import Twist
-from basic_navigation.action import Rotate
+from custom_interfaces.action import Rotate
 
 class RotationActionServer(Node):
     def __init__(self):

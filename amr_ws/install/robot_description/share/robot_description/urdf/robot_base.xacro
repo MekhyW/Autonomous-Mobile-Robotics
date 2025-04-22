@@ -1,0 +1,147 @@
+<?xml version='1.0'?>
+
+<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find robot_description)/urdf/robot_base.gazebo" />
+  <xacro:include filename="$(find robot_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find robot_description)/urdf/xacro_variables.xacro" />
+  <xacro:include filename="$(find robot_description)/urdf/wheels.xacro" />
+  <xacro:include filename="$(find robot_description)/urdf/caster_ball.xacro" />
+  <xacro:include filename="$(find robot_description)/urdf/sensors.xacro" />
+
+  <!-- Add dummy base link -->
+  <link name="base_link">
+  </link>
+
+  <link name='chassis'>
+    <pose>0 0 0.1 0 0 0</pose>
+
+    <inertial>
+      <mass value="10.0"/>
+      <origin xyz="0.0 0 0.1" rpy=" 0 0 0"/>
+      <box_inertia m="10" l="${chasis_box_length}" w="${chasis_box_width}" h="${chasis_box_height}"/>
+      <inertia
+          ixx="0.5" ixy="0" ixz="0"
+          iyy="1.0" iyz="0"
+          izz="0.1"
+      />
+    </inertial>
+
+    <collision name='collision'>
+      <geometry>
+        <box size="${chasis_box_length} ${chasis_box_width} ${chasis_box_height}"/>
+      </geometry>
+    </collision>
+
+    <visual name='chassis_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <box size="${chasis_box_length} ${chasis_box_width} ${chasis_box_height}"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+
+    <collision name='caster_collision'>
+      <origin xyz="${chasis_caster_x} ${chasis_caster_y} ${chasis_caster_z}" rpy=" ${chasis_caster_r} ${chasis_caster_p} ${chasis_caster_ya}"/>
+      <geometry>
+        <sphere radius="${chasis_caster_radius}"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0</mu>
+            <mu2>0</mu2>
+            <slip1>1.0</slip1>
+            <slip2>1.0</slip2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+
+    <visual name='caster_visual'>
+      <origin xyz="${chasis_caster_x} ${chasis_caster_y} ${chasis_caster_z}" rpy=" ${chasis_caster_r} ${chasis_caster_p} ${chasis_caster_ya}"/>
+      <geometry>
+        <sphere radius="${chasis_caster_radius}"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+
+    <collision name='caster_collision2'>
+      <origin xyz="${chasis_caster2_x} ${chasis_caster2_y} ${chasis_caster2_z}" rpy=" ${chasis_caster2_r} ${chasis_caster2_p} ${chasis_caster2_ya}"/>
+      <geometry>
+        <sphere radius="${chasis_caster_radius}"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0</mu>
+            <mu2>0</mu2>
+            <slip1>1.0</slip1>
+            <slip2>1.0</slip2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+
+    <visual name='caster2_visual'>
+      <origin xyz="${chasis_caster2_x} ${chasis_caster2_y} ${chasis_caster2_z}" rpy=" ${chasis_caster2_r} ${chasis_caster2_p} ${chasis_caster2_ya}"/>
+      <geometry>
+        <sphere radius="${chasis_caster_radius}"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+  </link>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="chassis"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="imu_link">
+  </link>
+
+  <joint name="imu_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="imu_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+
+  <link name="lidar_link">
+    <visual name="lidar_visual">
+      <origin xyz="0 0 0.07" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.1" length="0.05"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="lidar_link"/>
+    <origin xyz="0 0 0.07" rpy="0 0 0"/>
+  </joint>
+
+
+  <link name="camera_link">
+    <visual name="camera_visual">
+      <origin xyz="0.11 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.02 0.15 0.1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="camera_link"/>
+    <origin xyz="0.11 0 0" rpy="0 0 0"/>
+  </joint>
+
+
+  <!-- Include wheel and caster macros -->
+  <xacro:wheels_macro />
+  <xacro:caster_balls_macro />
+
+</robot>

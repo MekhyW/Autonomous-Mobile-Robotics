@@ -1,6 +1,0 @@
-Invoking command in '/home/mekhyw/amr_ws/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mekhyw/amr_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/mekhyw/amr_ws/install/robot_description
-Invoked command in '/home/mekhyw/amr_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mekhyw/amr_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/mekhyw/amr_ws/install/robot_description
-Invoking command in '/home/mekhyw/amr_ws/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mekhyw/amr_ws/build/robot_description -- -j16 -l16
-Invoked command in '/home/mekhyw/amr_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mekhyw/amr_ws/build/robot_description -- -j16 -l16
-Invoking command in '/home/mekhyw/amr_ws/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mekhyw/amr_ws/build/robot_description
-Invoked command in '/home/mekhyw/amr_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mekhyw/amr_ws/build/robot_description

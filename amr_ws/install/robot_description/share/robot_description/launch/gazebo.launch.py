@@ -18,9 +18,7 @@ def generate_launch_description():
                     'launch', 
                     'gazebo.launch.py')]),
                 launch_arguments={'world': os.path.join(description_package_path, 'world', world_file_name)}.items()
-            )
-
-    
+            )    
     
     return LaunchDescription([
         gazebo,
