@@ -17,6 +17,8 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Simultaneous Localization and Mapping](slam.md)
 - [Introduction to Nav2](nav2.md)
 - [Behavior Trees](behavior_trees.md)
+- [Costmaps](costmaps.md)
+- [Path Planners](path_planners.md)
 
 ## Projects
 
