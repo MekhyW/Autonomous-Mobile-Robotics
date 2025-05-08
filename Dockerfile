@@ -3,8 +3,8 @@ SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update && apt-get install -y \
     ros-foxy-navigation2 \
-    nav2-bringup \
-    rmw-cyclonedds-cpp
+    ros-foxy-nav2-bringup \
+    ros-foxy-rmw-cyclonedds-cpp
 
 RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 
