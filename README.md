@@ -19,6 +19,9 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Behavior Trees](behavior_trees.md)
 - [Costmaps](costmaps.md)
 - [Path Planners](path_planners.md)
+- [Controllers](controllers.md)
+- [Interacting with Nav2](interacting_with_nav2.md)
+- [Docker](docker.md)
 
 ## Projects
 
