@@ -22,6 +22,7 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Controllers](markdown/controllers.md)
 - [Interacting with Nav2](markdown/interacting_with_nav2.md)
 - [Docker](markdown/docker.md)
+- [Docker Compose](markdown/docker_compose.md)
 
 ## Projects
 
