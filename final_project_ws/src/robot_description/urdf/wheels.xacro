@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="wheels_macro">
+    <link name="left_wheel">
+      <collision name="collision">
+        <origin xyz="${wheel_x} ${wheel_y} ${wheel_z}" rpy="${wheel_r} ${wheel_p} ${wheel_ya}"/>
+        <geometry>
+          <cylinder radius="${wheel_cylinder_radius}" length="${wheel_cylinder_height}"/>
+        </geometry>
+      </collision>
+      <visual name="left_wheel_visual">
+        <origin xyz="${wheel_x} ${wheel_y} ${wheel_z}" rpy="${wheel_r} ${wheel_p} ${wheel_ya}"/>
+        <geometry>
+          <cylinder radius="${wheel_cylinder_radius}" length="${wheel_cylinder_height}"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <inertial>
+        <origin xyz="${wheel_x} ${wheel_y} ${wheel_z}" rpy="${wheel_r} ${wheel_p} ${wheel_ya}"/>
+        <mass value="5"/>
+        <cylinder_inertia m="5" r="${wheel_cylinder_radius}" h="${wheel_cylinder_height}"/>
+        <inertia
+          ixx="1.0" ixy="0.0" ixz="0.0"
+          iyy="1.0" iyz="0.0"
+          izz="1.0"/>
+      </inertial>
+    </link>
+
+    <link name="right_wheel">
+      <collision name="collision">
+        <origin xyz="${wheel_x} ${wheel_y} ${wheel_z}" rpy="${wheel_r} ${wheel_p} ${wheel_ya}"/>
+        <geometry>
+          <cylinder radius="${wheel_cylinder_radius}" length="${wheel_cylinder_height}"/>
+        </geometry>
+      </collision>
+      <visual name="right_wheel_visual">
+        <origin xyz="${wheel_x} ${wheel_y} ${wheel_z}" rpy="${wheel_r} ${wheel_p} ${wheel_ya}"/>
+        <geometry>
+          <cylinder radius="${wheel_cylinder_radius}" length="${wheel_cylinder_height}"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <inertial>
+        <origin xyz="${wheel_x} ${wheel_y} ${wheel_z}" rpy="${wheel_r} ${wheel_p} ${wheel_ya}"/>
+        <mass value="5"/>
+        <cylinder_inertia m="5" r="${wheel_cylinder_radius}" h="${wheel_cylinder_height}"/>
+        <inertia
+          ixx="1.0" ixy="0.0" ixz="0.0"
+          iyy="1.0" iyz="0.0"
+          izz="1.0"/>
+      </inertial>
+    </link>
+
+    <joint type="continuous" name="left_wheel_hinge">
+      <origin xyz="${left_wheel_x} ${left_wheel_y} ${left_wheel_z}" rpy="0 0 0"/>
+      <child link="left_wheel"/>
+      <parent link="base_link"/>
+      <axis xyz="0 1 0" rpy="0 0 0"/>
+      <joint_properties damping="0.0" friction="0.0"/>
+    </joint>
+
+    <joint type="continuous" name="right_wheel_hinge">
+      <origin xyz="${right_wheel_x} ${right_wheel_y} ${right_wheel_z}" rpy="0 0 0"/>
+      <child link="right_wheel"/>
+      <parent link="base_link"/>
+      <axis xyz="0 1 0" rpy="0 0 0"/>
+      <joint_properties damping="0.0" friction="0.0"/>
+    </joint>
+  </xacro:macro>
+
+</robot>
