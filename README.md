@@ -29,3 +29,4 @@ This repository contains the material used in the Autonomous Mobile Robotics cou
 - [Differential Robot Project in Gazebo](markdown/project_1.md)
 - [Basic Navigation](markdown/project_2.md)
 - [Localization and SLAM](markdown/project_3.md)
+- [Advanced Autonomous Navigation with ROS 2 and Docker](markdown/project_final.md)
