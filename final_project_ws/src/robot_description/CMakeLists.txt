@@ -18,7 +18,6 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
-find_package(stl REQUIRED)
 find_package(xacro REQUIRED)
 find_package(gazebo_ros_pkgs REQUIRED)
 find_package(gazebo_plugins REQUIRED)
@@ -36,7 +35,6 @@ endif()
 
 install(
 DIRECTORY
-    meshes
     urdf
     launch
     rviz
